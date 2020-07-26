@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfDemo.HiddenAndShowPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDemo.HiddenAndShowPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Column="0" Background="Red">
+            <Button  HorizontalAlignment="Left" VerticalAlignment="Top"  Width="80" Height="20" Content="Click Me" Click="Button_Click"></Button>
+        </Grid>
+        <Grid Name="MyGrid" Column="1" Width="100" Visibility="Collapsed"  Background="Yellow"></Grid>
+    </Grid>
+</Window>
